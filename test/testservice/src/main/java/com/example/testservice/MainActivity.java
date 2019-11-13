@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.testservice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,15 +21,15 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener OnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-//            Intent intent = new Intent(getApplicationContext(),SimpleService.class);
-//            switch (v.getId()){
-//                case R.id.bt_start_service:
-//                    startService(intent);
-//                    break;
-//                case R.id.bt_stop_service:
-//                    stopService(intent);
-//                    break;
-//            }
+            Intent intent = new Intent(getApplicationContext(),SimpleService.class);
+            switch (v.getId()){
+                case R.id.bt_start_service:
+                    startService(intent);
+                    break;
+                case R.id.bt_stop_service:
+                    stopService(intent);
+                    break;
+            }
         }
     };
 }
